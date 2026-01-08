@@ -58,7 +58,14 @@
         alert("Kérlek, töltsd ki mindkét mezőt, mielőtt továbbmennél!");
       }
     });
+        try {
+    const res = await fetch ("/api/items", {method: "POST", 
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({text}),
+     });
+</script>
     </script>
 
 </body>
+
 </html>
